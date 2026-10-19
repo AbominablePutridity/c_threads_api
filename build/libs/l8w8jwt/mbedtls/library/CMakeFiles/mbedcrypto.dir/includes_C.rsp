@@ -1,0 +1,1 @@
+-ID:/Clang/Proj1/libs/l8w8jwt/lib/mbedtls/include -ID:/Clang/Proj1/libs/l8w8jwt/lib/mbedtls/library -ID:/Clang/Proj1/build/libs/l8w8jwt/mbedtls/library -ID:/Clang/Proj1/libs/l8w8jwt/lib/mbedtls/3rdparty/everest/include -I"D:/Clang/Proj1/libs/l8w8jwt/lib/mbedtls/3rdparty/p256-m" -I"D:/Clang/Proj1/libs/l8w8jwt/lib/mbedtls/3rdparty/p256-m/p256-m"

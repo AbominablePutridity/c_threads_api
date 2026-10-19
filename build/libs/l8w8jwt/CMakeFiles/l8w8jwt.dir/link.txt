@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libl8w8jwt.a CMakeFiles/l8w8jwt.dir/src/base64.c.obj CMakeFiles/l8w8jwt.dir/src/util.c.obj CMakeFiles/l8w8jwt.dir/src/claim.c.obj CMakeFiles/l8w8jwt.dir/src/encode.c.obj CMakeFiles/l8w8jwt.dir/src/decode.c.obj CMakeFiles/l8w8jwt.dir/src/version.c.obj
+C:\msys64\ucrt64\bin\ranlib.exe libl8w8jwt.a

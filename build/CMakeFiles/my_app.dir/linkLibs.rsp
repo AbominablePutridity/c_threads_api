@@ -1,0 +1,1 @@
+ libs/l8w8jwt/libl8w8jwt.a libs/l8w8jwt/mbedtls/library/libmbedtls.a libs/l8w8jwt/mbedtls/library/libmbedx509.a libs/l8w8jwt/mbedtls/library/libmbedcrypto.a -lws2_32 libs/l8w8jwt/mbedtls/3rdparty/everest/libeverest.a "libs/l8w8jwt/mbedtls/3rdparty/p256-m/libp256m.a" -lbcrypt -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
