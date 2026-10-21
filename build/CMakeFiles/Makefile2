@@ -315,9 +315,9 @@ libs/l8w8jwt/mbedtls/pkgconfig/clean:
 CMakeFiles/my_app.dir/all: libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/all
 CMakeFiles/my_app.dir/all: libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/all
 CMakeFiles/my_app.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all
-CMakeFiles/my_app.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
-CMakeFiles/my_app.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
 CMakeFiles/my_app.dir/all: libs/l8w8jwt/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/all
+CMakeFiles/my_app.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
+CMakeFiles/my_app.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=92,93,94,95,96,97 "Built target my_app"
@@ -351,12 +351,12 @@ CMakeFiles/my_app.dir/clean:
 # All Build rule for target.
 libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/all: libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/all
 libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all
-libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
-libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
 libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/all: libs/l8w8jwt/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/all
+libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
+libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\CMakeFiles\l8w8jwt.dir\build.make libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\CMakeFiles\l8w8jwt.dir\build.make libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=4,5,6,7,8 "Built target l8w8jwt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=3,4,5,6,7,8 "Built target l8w8jwt"
 .PHONY : libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/all
 
 # Build rule for subdir invocation for target.
@@ -373,7 +373,7 @@ l8w8jwt: libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/rule
 # codegen rule for target.
 libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\CMakeFiles\l8w8jwt.dir\build.make libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=4,5,6,7,8 "Finished codegen for target l8w8jwt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=3,4,5,6,7,8 "Finished codegen for target l8w8jwt"
 .PHONY : libs/l8w8jwt/CMakeFiles/l8w8jwt.dir/codegen
 
 # clean rule for target.
@@ -420,12 +420,12 @@ libs/l8w8jwt/mbedtls/CMakeFiles/apidoc.dir/clean:
 libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\3rdparty\everest\CMakeFiles\everest.dir\build.make libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\3rdparty\everest\CMakeFiles\everest.dir\build.make libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=1,2,3 "Built target everest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=1,2 "Built target everest"
 .PHONY : libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/all
 
 # Build rule for subdir invocation for target.
 libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 0
 .PHONY : libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/rule
@@ -437,7 +437,7 @@ everest: libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/rule
 # codegen rule for target.
 libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\3rdparty\everest\CMakeFiles\everest.dir\build.make libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target everest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=1,2 "Finished codegen for target everest"
 .PHONY : libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/codegen
 
 # clean rule for target.
@@ -490,7 +490,7 @@ libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all: libs/l8w8jwt/mbedtls
 
 # Build rule for subdir invocation for target.
 libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 67
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 66
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 0
 .PHONY : libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/rule
@@ -515,11 +515,11 @@ libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/clean:
 
 # All Build rule for target.
 libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all: libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/all
-libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
 libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all: libs/l8w8jwt/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/all
+libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\library\CMakeFiles\mbedx509.dir\build.make libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\library\CMakeFiles\mbedx509.dir\build.make libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=85,86,87,88,89,90,91 "Built target mbedx509"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=84,85,86,87,88,89,90,91 "Built target mbedx509"
 .PHONY : libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
 
 # Build rule for subdir invocation for target.
@@ -536,7 +536,7 @@ mbedx509: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/rule
 # codegen rule for target.
 libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\library\CMakeFiles\mbedx509.dir\build.make libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=85,86,87,88,89,90,91 "Finished codegen for target mbedx509"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=84,85,86,87,88,89,90,91 "Finished codegen for target mbedx509"
 .PHONY : libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/codegen
 
 # clean rule for target.
@@ -549,17 +549,17 @@ libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/clean:
 
 # All Build rule for target.
 libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all: libs/l8w8jwt/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/all
-libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
-libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
 libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all: libs/l8w8jwt/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/all
+libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
+libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\library\CMakeFiles\mbedtls.dir\build.make libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\library\CMakeFiles\mbedtls.dir\build.make libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Built target mbedtls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83 "Built target mbedtls"
 .PHONY : libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all
 
 # Build rule for subdir invocation for target.
 libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 89
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 88
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 0
 .PHONY : libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/rule
@@ -571,7 +571,7 @@ mbedtls: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/rule
 # codegen rule for target.
 libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\library\CMakeFiles\mbedtls.dir\build.make libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Finished codegen for target mbedtls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83 "Finished codegen for target mbedtls"
 .PHONY : libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/codegen
 
 # clean rule for target.
@@ -584,8 +584,8 @@ libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/clean:
 
 # All Build rule for target.
 libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all
-libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
 libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
+libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/all: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\library\CMakeFiles\lib.dir\build.make libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\library\CMakeFiles\lib.dir\build.make libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num= "Built target lib"
@@ -593,7 +593,7 @@ libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/all: libs/l8w8jwt/mbedtls/librar
 
 # Build rule for subdir invocation for target.
 libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 89
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 88
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Clang\Proj1\build\CMakeFiles 0
 .PHONY : libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/rule
@@ -604,8 +604,8 @@ lib: libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/rule
 
 # codegen rule for target.
 libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/codegen: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedtls.dir/all
-libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/codegen: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
 libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/codegen: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
+libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/codegen: libs/l8w8jwt/mbedtls/library/CMakeFiles/mbedx509.dir/all
 	$(MAKE) $(MAKESILENT) -f libs\l8w8jwt\mbedtls\library\CMakeFiles\lib.dir\build.make libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num= "Finished codegen for target lib"
 .PHONY : libs/l8w8jwt/mbedtls/library/CMakeFiles/lib.dir/codegen

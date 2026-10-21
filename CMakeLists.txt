@@ -14,6 +14,7 @@ add_executable(
     security/jwt_encode.c
     db/db_connection.c
     model/user.c
+    controller/user_controller.c
 
     libs/cJSON/cJSON.c
     libs/sqlite3/sqlite3.c

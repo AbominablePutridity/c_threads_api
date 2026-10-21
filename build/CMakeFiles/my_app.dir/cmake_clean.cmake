@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/my_app.dir/controller/user_controller.c.obj"
+  "CMakeFiles/my_app.dir/controller/user_controller.c.obj.d"
   "CMakeFiles/my_app.dir/db/db_connection.c.obj"
   "CMakeFiles/my_app.dir/db/db_connection.c.obj.d"
   "CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj"

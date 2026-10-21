@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/Clang/Proj1/controller/user_controller.c" "CMakeFiles/my_app.dir/controller/user_controller.c.obj" "gcc" "CMakeFiles/my_app.dir/controller/user_controller.c.obj.d"
   "D:/Clang/Proj1/db/db_connection.c" "CMakeFiles/my_app.dir/db/db_connection.c.obj" "gcc" "CMakeFiles/my_app.dir/db/db_connection.c.obj.d"
   "D:/Clang/Proj1/libs/cJSON/cJSON.c" "CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj" "gcc" "CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj.d"
   "D:/Clang/Proj1/libs/mongoose/mongoose.c" "CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj" "gcc" "CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj.d"

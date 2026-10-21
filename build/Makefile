@@ -296,6 +296,30 @@ install_prep/all: cmake_check_build_system
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 install_prep/all
 .PHONY : install_prep/all
 
+controller/user_controller.obj: controller/user_controller.c.obj
+.PHONY : controller/user_controller.obj
+
+# target to build an object file
+controller/user_controller.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/controller/user_controller.c.obj
+.PHONY : controller/user_controller.c.obj
+
+controller/user_controller.i: controller/user_controller.c.i
+.PHONY : controller/user_controller.i
+
+# target to preprocess a source file
+controller/user_controller.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/controller/user_controller.c.i
+.PHONY : controller/user_controller.c.i
+
+controller/user_controller.s: controller/user_controller.c.s
+.PHONY : controller/user_controller.s
+
+# target to generate assembly for a file
+controller/user_controller.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/controller/user_controller.c.s
+.PHONY : controller/user_controller.c.s
+
 db/db_connection.obj: db/db_connection.c.obj
 .PHONY : db/db_connection.obj
 
@@ -485,6 +509,9 @@ help:
 	@echo ... mbedx509
 	@echo ... my_app
 	@echo ... p256m
+	@echo ... controller/user_controller.obj
+	@echo ... controller/user_controller.i
+	@echo ... controller/user_controller.s
 	@echo ... db/db_connection.obj
 	@echo ... db/db_connection.i
 	@echo ... db/db_connection.s
