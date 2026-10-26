@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_app.dir/model/user.c.obj.d"
   "CMakeFiles/my_app.dir/security/jwt_encode.c.obj"
   "CMakeFiles/my_app.dir/security/jwt_encode.c.obj.d"
+  "CMakeFiles/my_app.dir/service/user_service.c.obj"
+  "CMakeFiles/my_app.dir/service/user_service.c.obj.d"
   "libmy_app.dll.a"
   "my_app.exe"
   "my_app.exe.manifest"

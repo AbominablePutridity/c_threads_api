@@ -37,7 +37,7 @@ int main() {
     mg_mgr_init(&mgr);  // Инициализация менеджера
 
     // Запускаем HTTP-сервер на порту 8000, все запросы обрабатывает ev_handler
-    mg_http_listen(&mgr, "http://192.168.1.112:8000", ev_handler, NULL);
+    mg_http_listen(&mgr, "http://192.168.1.112:8087", ev_handler, NULL);
 
     // Бесконечный цикл обработки событий
     for (;;) {

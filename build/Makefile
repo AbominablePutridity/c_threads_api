@@ -488,6 +488,30 @@ security/jwt_encode.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/security/jwt_encode.c.s
 .PHONY : security/jwt_encode.c.s
 
+service/user_service.obj: service/user_service.c.obj
+.PHONY : service/user_service.obj
+
+# target to build an object file
+service/user_service.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/service/user_service.c.obj
+.PHONY : service/user_service.c.obj
+
+service/user_service.i: service/user_service.c.i
+.PHONY : service/user_service.i
+
+# target to preprocess a source file
+service/user_service.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/service/user_service.c.i
+.PHONY : service/user_service.c.i
+
+service/user_service.s: service/user_service.c.s
+.PHONY : service/user_service.s
+
+# target to generate assembly for a file
+service/user_service.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/service/user_service.c.s
+.PHONY : service/user_service.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -533,6 +557,9 @@ help:
 	@echo ... security/jwt_encode.obj
 	@echo ... security/jwt_encode.i
 	@echo ... security/jwt_encode.s
+	@echo ... service/user_service.obj
+	@echo ... service/user_service.i
+	@echo ... service/user_service.s
 .PHONY : help
 
 

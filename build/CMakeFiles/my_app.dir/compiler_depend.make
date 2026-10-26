@@ -259,7 +259,8 @@ CMakeFiles/my_app.dir/controller/user_controller.c.obj: D:/Clang/Proj1/controlle
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/xsaveoptintrin.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/xsavesintrin.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/xtestintrin.h \
-  D:/Clang/Proj1/libs/mongoose/mongoose.h
+  D:/Clang/Proj1/libs/mongoose/mongoose.h \
+  D:/Clang/Proj1/service/user_service.h
 
 CMakeFiles/my_app.dir/db/db_connection.c.obj: D:/Clang/Proj1/db/db_connection.c \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -1148,7 +1149,8 @@ CMakeFiles/my_app.dir/model/user.c.obj: D:/Clang/Proj1/model/user.c \
   C:/msys64/ucrt64/include/vadefs.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stdarg.h \
   D:/Clang/Proj1/db/db_connection.h \
-  D:/Clang/Proj1/libs/sqlite3/sqlite3.h
+  D:/Clang/Proj1/libs/sqlite3/sqlite3.h \
+  D:/Clang/Proj1/model/user.h
 
 CMakeFiles/my_app.dir/security/jwt_encode.c.obj: D:/Clang/Proj1/security/jwt_encode.c \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -1190,6 +1192,36 @@ CMakeFiles/my_app.dir/security/jwt_encode.c.obj: D:/Clang/Proj1/security/jwt_enc
   D:/Clang/Proj1/libs/l8w8jwt/include/l8w8jwt/retcodes.h \
   D:/Clang/Proj1/libs/l8w8jwt/include/l8w8jwt/timehelper.h \
   D:/Clang/Proj1/libs/l8w8jwt/include/l8w8jwt/version.h \
+  D:/Clang/Proj1/security/jwt_encode.h
+
+CMakeFiles/my_app.dir/service/user_service.c.obj: D:/Clang/Proj1/service/user_service.c \
+  C:/msys64/ucrt64/include/_mingw.h \
+  C:/msys64/ucrt64/include/_mingw_mac.h \
+  C:/msys64/ucrt64/include/_mingw_secapi.h \
+  C:/msys64/ucrt64/include/_mingw_stdarg.h \
+  C:/msys64/ucrt64/include/corecrt.h \
+  C:/msys64/ucrt64/include/corecrt_malloc.h \
+  C:/msys64/ucrt64/include/corecrt_memory.h \
+  C:/msys64/ucrt64/include/corecrt_wstdlib.h \
+  C:/msys64/ucrt64/include/corecrt_wstring.h \
+  C:/msys64/ucrt64/include/crtdefs.h \
+  C:/msys64/ucrt64/include/errno.h \
+  C:/msys64/ucrt64/include/limits.h \
+  C:/msys64/ucrt64/include/malloc.h \
+  C:/msys64/ucrt64/include/stdarg.h \
+  C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdlib.h \
+  C:/msys64/ucrt64/include/string.h \
+  C:/msys64/ucrt64/include/vadefs.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/limits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/mm_malloc.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stdarg.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/syslimits.h \
+  D:/Clang/Proj1/db/db_connection.h \
+  D:/Clang/Proj1/libs/cJSON/cJSON.h \
+  D:/Clang/Proj1/libs/sqlite3/sqlite3.h \
+  D:/Clang/Proj1/model/user.h \
   D:/Clang/Proj1/security/jwt_encode.h
 
 
@@ -1721,6 +1753,8 @@ C:/msys64/ucrt64/include/bcrypt.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/pkuintrin.h:
 
+D:/Clang/Proj1/model/user.h:
+
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/shaintrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/popcntintrin.h:
@@ -1770,6 +1804,8 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/xsavesintrin.h:
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/xtestintrin.h:
 
 D:/Clang/Proj1/libs/mongoose/mongoose.h:
+
+D:/Clang/Proj1/service/user_service.h:
 
 D:/Clang/Proj1/db/db_connection.c:
 
@@ -1866,3 +1902,5 @@ D:/Clang/Proj1/libs/l8w8jwt/include/l8w8jwt/decode.h:
 D:/Clang/Proj1/libs/l8w8jwt/include/l8w8jwt/timehelper.h:
 
 D:/Clang/Proj1/libs/l8w8jwt/include/l8w8jwt/version.h:
+
+D:/Clang/Proj1/service/user_service.c:

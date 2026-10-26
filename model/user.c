@@ -1,15 +1,10 @@
 #include<stdio.h>
 #include<string.h>
-
 #include "../libs/sqlite3/sqlite3.h"
-#include "../db/db_connection.h"
 
-struct User {
-    int   id;
-    char  login[64];
-    char  password[16];
-    long  created_at;
-};
+#include "user.h"
+
+#include "../db/db_connection.h"
 
 /*
 * @brief создаем таблицу пользователей если у нас ее не существует

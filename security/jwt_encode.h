@@ -4,6 +4,6 @@
 char* generate_token(const char* user_login);
 int   validate_token(const char* token);
 
-int jwt_usability_example(void);
+int   jwt_usability_example(void);
 
 #endif

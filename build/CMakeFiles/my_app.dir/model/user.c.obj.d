@@ -13,5 +13,5 @@ CMakeFiles/my_app.dir/model/user.c.obj: D:\Clang\Proj1\model\user.c \
  D:/Clang/Proj1/libs/sqlite3/sqlite3.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stdarg.h \
  C:/msys64/ucrt64/include/stdarg.h \
- C:/msys64/ucrt64/include/_mingw_stdarg.h \
+ C:/msys64/ucrt64/include/_mingw_stdarg.h D:\Clang\Proj1\model\user.h \
  D:/Clang/Proj1/db/db_connection.h
