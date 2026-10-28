@@ -13,7 +13,10 @@ add_executable(
     my_app main.c
     security/jwt_encode.c
     db/db_connection.c
+
     model/user.c
+	model/theme.c
+    
     controller/user_controller.c
     service/user_service.c
 

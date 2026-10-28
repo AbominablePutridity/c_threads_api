@@ -13,6 +13,8 @@ char* auth(char* login, char* password)
 
     cJSON *json = cJSON_CreateObject(); // выделяет память в куче - после вызова необходим free()
 
+	init_table_user(db);
+
     if (db != NULL) {
         struct User out; // структура куда выводится результат поиска
 

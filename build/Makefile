@@ -440,6 +440,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/main.c.s
 .PHONY : main.c.s
 
+model/theme.obj: model/theme.c.obj
+.PHONY : model/theme.obj
+
+# target to build an object file
+model/theme.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/model/theme.c.obj
+.PHONY : model/theme.c.obj
+
+model/theme.i: model/theme.c.i
+.PHONY : model/theme.i
+
+# target to preprocess a source file
+model/theme.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/model/theme.c.i
+.PHONY : model/theme.c.i
+
+model/theme.s: model/theme.c.s
+.PHONY : model/theme.s
+
+# target to generate assembly for a file
+model/theme.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/model/theme.c.s
+.PHONY : model/theme.c.s
+
 model/user.obj: model/user.c.obj
 .PHONY : model/user.obj
 
@@ -551,6 +575,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... model/theme.obj
+	@echo ... model/theme.i
+	@echo ... model/theme.s
 	@echo ... model/user.obj
 	@echo ... model/user.i
 	@echo ... model/user.s

@@ -10,7 +10,7 @@ struct User {
 
 #include "../db/db_connection.h"
 
-int init_table(sqlite3* db);
+int init_table_user(sqlite3* db);
 int user_get_by_login(sqlite3* db, const char* login, struct User* out);
 
 #endif

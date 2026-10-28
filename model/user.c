@@ -10,7 +10,7 @@
 * @brief создаем таблицу пользователей если у нас ее не существует
 * @param db - экземпляр подключения
 */
-int init_table(sqlite3* db)
+int init_table_user(sqlite3* db)
 {
     sqlite3_stmt* stmt = create_query(
         db,
