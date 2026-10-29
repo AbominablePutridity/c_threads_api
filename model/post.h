@@ -15,7 +15,7 @@ struct Post
 #include "../db/db_connection.h"
 
 int init_table_post(sqlite3* db);
-int get_posts_by_filter(sqlite3* db, char* search_field, int id_theme, struct Post out[], int limit, int offset);
+int get_posts_by_filter(sqlite3* db, char* search_field, int id_theme, struct Post out[], int page, int limit);
 struct Post* find_concrete_post_by_id(sqlite3* db, int id, struct Post* out);
 
 #endif

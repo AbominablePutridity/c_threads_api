@@ -18,26 +18,20 @@ int init_table_theme(sqlite3* db)
         ")"
     );
 
-    sqlite3_step(stmt);
-    sqlite3_finalize(stmt);
-
     int rc = sqlite3_step(stmt); // выполняет запрос
     sqlite3_finalize(stmt); // полностью освобождает память от запроса (после выполнения)
 
     if (rc != SQLITE_DONE) {
-        fprintf(stderr, "init_table: %s\n", sqlite3_errmsg(db));
+        fprintf(stderr, "init_table_theme: %s\n", sqlite3_errmsg(db));
         return -1;
     }
     return 0;    
 }
 
-/*
-int get_themes_by_filter(sqlite3* db, int id, char name[150], struct Theme* out, int limit, int offset);
-struct Theme* find_theme_by_id(sqlite3* db, int id);
-*/
-
-int get_themes_by_filter(sqlite3* db, int id, char name[150], struct Theme out[], int limit, int offset)
+int get_themes_by_filter(sqlite3* db, int id, char name[150], struct Theme out[], int page, int limit)
 {
+	int offset = (page - 1) * limit;
+
 	// 1. гедерация sql и проверка фильтров
 	char sql[512] =
 	        "SELECT * FROM Theme ";
@@ -50,7 +44,7 @@ int get_themes_by_filter(sqlite3* db, int id, char name[150], struct Theme out[]
 		else
 			strcat(sql, "WHERE ");
 
-		strcat(sql, "id = :id ");
+		strcat(sql, "Id = :id ");
 
 		is_and = true;
 	}
@@ -62,12 +56,12 @@ int get_themes_by_filter(sqlite3* db, int id, char name[150], struct Theme out[]
 		else
 			strcat(sql, "WHERE ");
 	
-		strcat(sql, "name = :name ");
+		strcat(sql, "Name = :name ");
 	
 		is_and = true;
 	}
 
-	strcat(sql, "LIMIT :limit OFFSET :offset");
+	strcat(sql, " LIMIT :limit OFFSET :offset");
 
 	// 2. установка значений в prepared_statement
 	sqlite3_stmt* stmt = create_query(
