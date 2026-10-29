@@ -101,6 +101,8 @@ int get_posts_by_filter(sqlite3* db, char* search_field, int id_theme, struct Po
 
 		strncpy(out[count].header, (const char*)sqlite3_column_text(stmt, 1), sizeof(out[count].header) - 1);
 
+		out[count].post_data = NULL;
+
 		count++;
 	}
 

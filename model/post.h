@@ -3,13 +3,18 @@
 
 #include<time.h>
 
+struct PostData
+{
+	char*  description;
+	time_t created_at;
+};
+
 struct Post
 {
 	int	   id;
 	char   header[150];
-	char*  description;
-	time_t created_at;
-	int    id_user;	
+	int    id_user;
+	struct PostData* post_data;	
 };
 
 #include "../db/db_connection.h"
