@@ -440,6 +440,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/main.c.s
 .PHONY : main.c.s
 
+model/post.obj: model/post.c.obj
+.PHONY : model/post.obj
+
+# target to build an object file
+model/post.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/model/post.c.obj
+.PHONY : model/post.c.obj
+
+model/post.i: model/post.c.i
+.PHONY : model/post.i
+
+# target to preprocess a source file
+model/post.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/model/post.c.i
+.PHONY : model/post.c.i
+
+model/post.s: model/post.c.s
+.PHONY : model/post.s
+
+# target to generate assembly for a file
+model/post.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_app.dir\build.make CMakeFiles/my_app.dir/model/post.c.s
+.PHONY : model/post.c.s
+
 model/theme.obj: model/theme.c.obj
 .PHONY : model/theme.obj
 
@@ -575,6 +599,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... model/post.obj
+	@echo ... model/post.i
+	@echo ... model/post.s
 	@echo ... model/theme.obj
 	@echo ... model/theme.i
 	@echo ... model/theme.s

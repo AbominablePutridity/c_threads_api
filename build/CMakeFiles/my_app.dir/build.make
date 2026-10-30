@@ -149,11 +149,26 @@ CMakeFiles/my_app.dir/model/theme.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/my_app.dir/model/theme.c.s"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Clang\Proj1\model\theme.c -o CMakeFiles\my_app.dir\model\theme.c.s
 
+CMakeFiles/my_app.dir/model/post.c.obj: CMakeFiles/my_app.dir/flags.make
+CMakeFiles/my_app.dir/model/post.c.obj: CMakeFiles/my_app.dir/includes_C.rsp
+CMakeFiles/my_app.dir/model/post.c.obj: D:/Clang/Proj1/model/post.c
+CMakeFiles/my_app.dir/model/post.c.obj: CMakeFiles/my_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/my_app.dir/model/post.c.obj"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_app.dir/model/post.c.obj -MF CMakeFiles\my_app.dir\model\post.c.obj.d -o CMakeFiles\my_app.dir\model\post.c.obj -c D:\Clang\Proj1\model\post.c
+
+CMakeFiles/my_app.dir/model/post.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/my_app.dir/model/post.c.i"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Clang\Proj1\model\post.c > CMakeFiles\my_app.dir\model\post.c.i
+
+CMakeFiles/my_app.dir/model/post.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/my_app.dir/model/post.c.s"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Clang\Proj1\model\post.c -o CMakeFiles\my_app.dir\model\post.c.s
+
 CMakeFiles/my_app.dir/controller/user_controller.c.obj: CMakeFiles/my_app.dir/flags.make
 CMakeFiles/my_app.dir/controller/user_controller.c.obj: CMakeFiles/my_app.dir/includes_C.rsp
 CMakeFiles/my_app.dir/controller/user_controller.c.obj: D:/Clang/Proj1/controller/user_controller.c
 CMakeFiles/my_app.dir/controller/user_controller.c.obj: CMakeFiles/my_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/my_app.dir/controller/user_controller.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/my_app.dir/controller/user_controller.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_app.dir/controller/user_controller.c.obj -MF CMakeFiles\my_app.dir\controller\user_controller.c.obj.d -o CMakeFiles\my_app.dir\controller\user_controller.c.obj -c D:\Clang\Proj1\controller\user_controller.c
 
 CMakeFiles/my_app.dir/controller/user_controller.c.i: cmake_force
@@ -168,7 +183,7 @@ CMakeFiles/my_app.dir/service/user_service.c.obj: CMakeFiles/my_app.dir/flags.ma
 CMakeFiles/my_app.dir/service/user_service.c.obj: CMakeFiles/my_app.dir/includes_C.rsp
 CMakeFiles/my_app.dir/service/user_service.c.obj: D:/Clang/Proj1/service/user_service.c
 CMakeFiles/my_app.dir/service/user_service.c.obj: CMakeFiles/my_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/my_app.dir/service/user_service.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/my_app.dir/service/user_service.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_app.dir/service/user_service.c.obj -MF CMakeFiles\my_app.dir\service\user_service.c.obj.d -o CMakeFiles\my_app.dir\service\user_service.c.obj -c D:\Clang\Proj1\service\user_service.c
 
 CMakeFiles/my_app.dir/service/user_service.c.i: cmake_force
@@ -183,7 +198,7 @@ CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj: CMakeFiles/my_app.dir/flags.make
 CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj: CMakeFiles/my_app.dir/includes_C.rsp
 CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj: D:/Clang/Proj1/libs/cJSON/cJSON.c
 CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj: CMakeFiles/my_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj -MF CMakeFiles\my_app.dir\libs\cJSON\cJSON.c.obj.d -o CMakeFiles\my_app.dir\libs\cJSON\cJSON.c.obj -c D:\Clang\Proj1\libs\cJSON\cJSON.c
 
 CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.i: cmake_force
@@ -198,7 +213,7 @@ CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.obj: CMakeFiles/my_app.dir/flags.ma
 CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.obj: CMakeFiles/my_app.dir/includes_C.rsp
 CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.obj: D:/Clang/Proj1/libs/sqlite3/sqlite3.c
 CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.obj: CMakeFiles/my_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.obj -MF CMakeFiles\my_app.dir\libs\sqlite3\sqlite3.c.obj.d -o CMakeFiles\my_app.dir\libs\sqlite3\sqlite3.c.obj -c D:\Clang\Proj1\libs\sqlite3\sqlite3.c
 
 CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.i: cmake_force
@@ -213,7 +228,7 @@ CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj: CMakeFiles/my_app.dir/flags.
 CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj: CMakeFiles/my_app.dir/includes_C.rsp
 CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj: D:/Clang/Proj1/libs/mongoose/mongoose.c
 CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj: CMakeFiles/my_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj -MF CMakeFiles\my_app.dir\libs\mongoose\mongoose.c.obj.d -o CMakeFiles\my_app.dir\libs\mongoose\mongoose.c.obj -c D:\Clang\Proj1\libs\mongoose\mongoose.c
 
 CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.i: cmake_force
@@ -231,6 +246,7 @@ my_app_OBJECTS = \
 "CMakeFiles/my_app.dir/db/db_connection.c.obj" \
 "CMakeFiles/my_app.dir/model/user.c.obj" \
 "CMakeFiles/my_app.dir/model/theme.c.obj" \
+"CMakeFiles/my_app.dir/model/post.c.obj" \
 "CMakeFiles/my_app.dir/controller/user_controller.c.obj" \
 "CMakeFiles/my_app.dir/service/user_service.c.obj" \
 "CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj" \
@@ -245,6 +261,7 @@ my_app.exe: CMakeFiles/my_app.dir/security/jwt_encode.c.obj
 my_app.exe: CMakeFiles/my_app.dir/db/db_connection.c.obj
 my_app.exe: CMakeFiles/my_app.dir/model/user.c.obj
 my_app.exe: CMakeFiles/my_app.dir/model/theme.c.obj
+my_app.exe: CMakeFiles/my_app.dir/model/post.c.obj
 my_app.exe: CMakeFiles/my_app.dir/controller/user_controller.c.obj
 my_app.exe: CMakeFiles/my_app.dir/service/user_service.c.obj
 my_app.exe: CMakeFiles/my_app.dir/libs/cJSON/cJSON.c.obj
@@ -260,7 +277,7 @@ my_app.exe: libs/l8w8jwt/mbedtls/3rdparty/p256-m/libp256m.a
 my_app.exe: CMakeFiles/my_app.dir/linkLibs.rsp
 my_app.exe: CMakeFiles/my_app.dir/objects1.rsp
 my_app.exe: CMakeFiles/my_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable my_app.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Clang\Proj1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable my_app.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\my_app.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

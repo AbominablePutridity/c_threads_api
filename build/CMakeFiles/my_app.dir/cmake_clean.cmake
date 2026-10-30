@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.obj.d"
   "CMakeFiles/my_app.dir/main.c.obj"
   "CMakeFiles/my_app.dir/main.c.obj.d"
+  "CMakeFiles/my_app.dir/model/post.c.obj"
+  "CMakeFiles/my_app.dir/model/post.c.obj.d"
   "CMakeFiles/my_app.dir/model/theme.c.obj"
   "CMakeFiles/my_app.dir/model/theme.c.obj.d"
   "CMakeFiles/my_app.dir/model/user.c.obj"

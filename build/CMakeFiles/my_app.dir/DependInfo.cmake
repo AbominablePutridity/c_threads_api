@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Clang/Proj1/libs/mongoose/mongoose.c" "CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj" "gcc" "CMakeFiles/my_app.dir/libs/mongoose/mongoose.c.obj.d"
   "D:/Clang/Proj1/libs/sqlite3/sqlite3.c" "CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.obj" "gcc" "CMakeFiles/my_app.dir/libs/sqlite3/sqlite3.c.obj.d"
   "D:/Clang/Proj1/main.c" "CMakeFiles/my_app.dir/main.c.obj" "gcc" "CMakeFiles/my_app.dir/main.c.obj.d"
+  "D:/Clang/Proj1/model/post.c" "CMakeFiles/my_app.dir/model/post.c.obj" "gcc" "CMakeFiles/my_app.dir/model/post.c.obj.d"
   "D:/Clang/Proj1/model/theme.c" "CMakeFiles/my_app.dir/model/theme.c.obj" "gcc" "CMakeFiles/my_app.dir/model/theme.c.obj.d"
   "D:/Clang/Proj1/model/user.c" "CMakeFiles/my_app.dir/model/user.c.obj" "gcc" "CMakeFiles/my_app.dir/model/user.c.obj.d"
   "D:/Clang/Proj1/security/jwt_encode.c" "CMakeFiles/my_app.dir/security/jwt_encode.c.obj" "gcc" "CMakeFiles/my_app.dir/security/jwt_encode.c.obj.d"

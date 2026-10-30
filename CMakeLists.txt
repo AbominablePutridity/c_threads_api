@@ -16,6 +16,7 @@ add_executable(
 
     model/user.c
 	model/theme.c
+	model/post.c
     
     controller/user_controller.c
     service/user_service.c
