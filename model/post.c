@@ -5,6 +5,21 @@
 #include "post.h"
 #include <stdbool.h>
 
+int free_post(struct Post *post)
+{
+	if (post->post_data != NULL) {
+		if (post->post_data->description != NULL) {
+			free(post->post_data->description);
+		}
+
+		free(post->post_data);
+		post->post_data = NULL; 
+	}
+
+	free(post);
+
+	return 0;		
+}
 
 int init_table_post(sqlite3* db)
 {
@@ -19,6 +34,11 @@ int init_table_post(sqlite3* db)
 		"	FOREIGN KEY (UserId) REFERENCES User(Id) ON DELETE CASCADE"
 		");"
 	);
+
+	if (!stmt) {
+		fprintf(stderr, "create_post: пустой stmt!\n");
+		return -1;
+	}
 
 	int rc = sqlite3_step(stmt);
 	sqlite3_finalize(stmt);
@@ -68,6 +88,11 @@ int get_posts_by_filter(sqlite3* db, char* search_field, int id_theme, struct Po
 		db,
 		sql	
 	);
+
+	if (!stmt) {
+		fprintf(stderr, "get_posts_by_filter: пустой stmt!\n");
+		return -1;
+	}
 
 	if (id_theme != 0) {
 		int idx = sqlite3_bind_parameter_index(stmt, ":id");
@@ -120,6 +145,11 @@ struct Post* find_concrete_post_by_id(sqlite3* db, int id)
 		sql
 	);
 
+	if (!stmt) {
+		fprintf(stderr, "find_concrete_post_by_id: пустой stmt!\n");
+		return NULL;
+	}
+
 	int idx = sqlite3_bind_parameter_index(stmt, ":id");
 	if (idx) sqlite3_bind_int(stmt, idx, id);
 
@@ -166,6 +196,12 @@ int create_post(sqlite3* db, struct Post* post)
 			sql
 		);
 
+		if (!stmt) {
+			free_post(post);
+			fprintf(stderr, "create_post: пустой stmt!\n");
+			return -1;
+		}
+
 		//TODO: 1) сделать вставку по биндингам
 		sqlite3_bind_int(stmt, 1, post->id_user);
 
@@ -183,14 +219,130 @@ int create_post(sqlite3* db, struct Post* post)
 		sqlite3_finalize(stmt);
 		
 		//TODO: 2) сделать очистку передаваемой структуры (из кучи)
-		free(post->post_data->description);
-		free(post->post_data);
+		free_post(post);
 	} else {
 		//выводим ошибку в консоль
 		fprintf(stderr, "Ошибка: post_data не может быть NULL\n");
 	}
 
-	free(post);
-
 	return result;
+}
+
+// здесь post - указатель на кучу (выделять через malloc)
+int update_post(sqlite3* db, int id_post, struct Post* post)
+{
+	char sql[512] = "UPDATE Post SET ";
+	int len = (int)strlen(sql);   // позиция в буфере; после литерала = 16
+	int is_first = 1;
+	
+	if (post->header[0] != '\0') {
+	    len += snprintf(sql + len, sizeof(sql) - len,
+	                    "%sHeader = :header", is_first ? "" : ", ");
+	    is_first = 0;
+	}
+	
+	if (post->post_data != NULL) {
+		if(post->post_data->description != NULL) {
+	    	len += snprintf(sql + len, sizeof(sql) - len,
+	                    "%sDescription = :description", is_first ? "" : ", ");
+	    	is_first = 0;
+	    }
+
+	    len += snprintf(sql + len, sizeof(sql) - len,
+	                    "%sCreatedAt = strftime('%%s','now')", is_first ? "" : ", "); 
+	    is_first = 0;
+	}
+	
+	if (is_first) return -1;   // ничего не добавили
+	
+	len += snprintf(sql + len, sizeof(sql) - len, " WHERE Id = :id");
+	
+	// проверка, что всё влезло
+	if (len >= (int)sizeof(sql)) return -1;   // переполнение (не должно случиться)
+
+	sqlite3_stmt* stmt = create_query(
+			db,
+			sql
+	);
+
+	if (!stmt) {
+		free_post(post);
+		fprintf(stderr, "update_post: пустой stmt!\n");
+		return -1;
+	}
+
+	// подстановка значений
+	if (post->header[0] != '\0') {
+		int header_idx = sqlite3_bind_parameter_index(stmt, ":header");
+		if (header_idx) sqlite3_bind_text(stmt, header_idx, post->header, -1, SQLITE_TRANSIENT);
+	}
+
+	if (post->post_data != NULL) {
+		if (post->post_data->description != NULL) {
+			int description_idx = sqlite3_bind_parameter_index(stmt, ":description");
+
+			if (description_idx)
+				sqlite3_bind_text(
+					stmt,
+					description_idx,
+					post->post_data->description,
+					-1,
+					SQLITE_TRANSIENT
+				);
+		}
+	}
+
+	if (id_post > 0) {
+		int id_idx = sqlite3_bind_parameter_index(stmt, ":id");
+
+		if (id_idx)
+			sqlite3_bind_int(
+				stmt,
+				id_idx,
+				id_post
+			);
+	}
+
+	//TODO: очистить переданную стркутуру с данными и выполнить запрос
+	free_post(post);
+
+	int rc = sqlite3_step(stmt);
+	sqlite3_finalize(stmt);
+
+	if (rc == SQLITE_DONE) {
+		return 0;			
+	} else {
+		return -1;	
+	}
+}
+
+int delete_post_by_id(sqlite3* db, int id)
+{
+	if (id > 0) {
+		char sql[512] = "DELETE FROM Post WHERE Id = ?;";
+
+		sqlite3_stmt* stmt = create_query(
+			db,
+			sql
+		);
+
+		if (!stmt) {
+			fprintf(stderr, "delete_post_by_id: пустой stmt!\n");
+			return -1;
+		}
+
+		sqlite3_bind_int(stmt, 1, id);
+		int rc = sqlite3_step(stmt);
+
+		sqlite3_finalize(stmt);
+		
+		if (rc == SQLITE_DONE) {
+			return 0;
+		} else {
+			fprintf(stderr, "delete_post_by_id: выполнения запроса не произошло!\n");
+			return -1;
+		}
+	} else {
+		return -1;
+	}
 }

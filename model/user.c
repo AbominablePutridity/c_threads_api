@@ -21,6 +21,7 @@ int init_table_user(sqlite3* db)
         "   CreatedAt INTEGER NOT NULL"
         ")"
     );
+    if (!stmt) return -1;
 
     sqlite3_step(stmt);
     sqlite3_finalize(stmt);

@@ -19,9 +19,12 @@ struct Post
 
 #include "../db/db_connection.h"
 
+int free_post(struct Post *post); // освобождает память из структуры
 int init_table_post(sqlite3* db);
 int get_posts_by_filter(sqlite3* db, char* search_field, int id_theme, struct Post out[], int page, int limit);
 struct Post* find_concrete_post_by_id(sqlite3* db, int id); // обязательно очищаем после вызова
 int create_post(sqlite3* db, struct Post* post); // здесь post - указатель на кучу (выделять через malloc)
+int update_post(sqlite3* db, int id_post, struct Post* post); // здесь post - указатель на кучу (выделять через malloc)
+int delete_post_by_id(sqlite3* db, int id);
 
 #endif
